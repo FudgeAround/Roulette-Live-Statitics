@@ -1,0 +1,15 @@
+function last() {
+var i;
+var s="";
+console.clear();
+for (i=492;i>0;i--){
+try { s+=$("div[data-role='statistics']:nth-child("+i+")").textContent;
+s+="\n"; } catch{}
+}
+for (i=15;i>0;i--){
+try{ s+=$("div[data-role='recent-number']:nth-child("+i+")").textContent;
+s+="\n"; } catch{}
+}
+console.log(s);
+}
+last()
